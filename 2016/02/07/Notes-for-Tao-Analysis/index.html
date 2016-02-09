@@ -1,0 +1,919 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="陶哲轩实分析," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="总得来说，这本书是以一种与中小学截然不同的方式来教学。不过我只看了前四章，没有看到真正的核心部分，只是觉得，没有习题解答的书是不适合我来自学的。
+注意：
+
+书中的页码为中文版书对应的页码。
+书中的比例数(rational)，即我们通常说的有理数。
+
+第2章Definition
+2.1.3 自然数的定义
+2.2.1 自然数的加法
+2.2.7 正自然数
+2.2.11 自然数的排序
+2.3.1 自然数的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="陶哲轩实分析">
+<meta property="og:url" content="http://BetweenTearsAndLaughter.github.io/2016/02/07/Notes-for-Tao-Analysis/index.html">
+<meta property="og:site_name" content="Witness">
+<meta property="og:description" content="总得来说，这本书是以一种与中小学截然不同的方式来教学。不过我只看了前四章，没有看到真正的核心部分，只是觉得，没有习题解答的书是不适合我来自学的。
+注意：
+
+书中的页码为中文版书对应的页码。
+书中的比例数(rational)，即我们通常说的有理数。
+
+第2章Definition
+2.1.3 自然数的定义
+2.2.1 自然数的加法
+2.2.7 正自然数
+2.2.11 自然数的排序
+2.3.1 自然数的">
+<meta property="og:updated_time" content="2016-02-09T17:36:58.987Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="陶哲轩实分析">
+<meta name="twitter:description" content="总得来说，这本书是以一种与中小学截然不同的方式来教学。不过我只看了前四章，没有看到真正的核心部分，只是觉得，没有习题解答的书是不适合我来自学的。
+注意：
+
+书中的页码为中文版书对应的页码。
+书中的比例数(rational)，即我们通常说的有理数。
+
+第2章Definition
+2.1.3 自然数的定义
+2.2.1 自然数的加法
+2.2.7 正自然数
+2.2.11 自然数的排序
+2.3.1 自然数的">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> 陶哲轩实分析 | Witness </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Witness</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Time is the real magic.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                陶哲轩实分析
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-02-07T12:32:34+08:00" content="2016-02-07">
+              2016-02-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/math/" itemprop="url" rel="index">
+                    <span itemprop="name">math</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/07/Notes-for-Tao-Analysis/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/02/07/Notes-for-Tao-Analysis/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>总得来说，这本书是以一种与中小学截然不同的方式来教学。不过我只看了前四章，没有看到真正的核心部分，只是觉得，没有习题解答的书是不适合我来自学的。</p>
+<p>注意：</p>
+<ul>
+<li>书中的页码为中文版书对应的页码。</li>
+<li>书中的比例数(rational)，即我们通常说的有理数。</li>
+</ul>
+<h3 id="u7B2C2_u7AE0"><a href="#u7B2C2_u7AE0" class="headerlink" title="第2章"></a>第2章</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><ul>
+<li>2.1.3 自然数的定义</li>
+<li>2.2.1 自然数的加法</li>
+<li>2.2.7 正自然数</li>
+<li>2.2.11 自然数的排序</li>
+<li>2.3.1 自然数的乘法</li>
+</ul>
+<h4 id="Peano_u516C_u7406"><a href="#Peano_u516C_u7406" class="headerlink" title="Peano公理"></a>Peano公理</h4><ul>
+<li>2.1 0是一个自然数</li>
+<li>2.2 若n是自然数，则n++也是自然数</li>
+<li>2.3 0不是任何自然数的后继</li>
+<li>2.4 不同的自然数必有不同的后继者</li>
+<li>2.5 数学归纳原理</li>
+</ul>
+<h4 id="Uncategorized"><a href="#Uncategorized" class="headerlink" title="Uncategorized"></a>Uncategorized</h4><ul>
+<li>现代分析的一个非凡成就是，只从这五个(Peano公理)非常原始的公理和集合论中的某些附加的公理出发，就能建立起所有的其他的数系，创造函数，并做我们通常所做的全部代数和微积分。</li>
+<li>自然数可以趋于无限，但永远不能到达无限，无限不是自然数。</li>
+<li>我们对自然数的定义是公理化的，不是构造性的。</li>
+<li>关于引理，命题，定理，推论之间的关系。P20</li>
+<li>欧几里得算法标志着数论的开端。</li>
+</ul>
+<h3 id="u7B2C3_u7AE0"><a href="#u7B2C3_u7AE0" class="headerlink" title="第3章"></a>第3章</h3><h4 id="Definition-1"><a href="#Definition-1" class="headerlink" title="Definition"></a>Definition</h4><ul>
+<li>3.1.4 集合相等，P27</li>
+<li>3.1.15 子集与真子集，P30</li>
+<li>3.1.23 交，P32</li>
+<li>3.1.27 差集，P33</li>
+<li>3.3.1 函数，P38</li>
+<li>3.3.7 函数相等，P40</li>
+<li>3.3.10 函数复合，P40</li>
+<li>3.3.14 单射，P42</li>
+<li>3.3.17 满射，P42</li>
+<li>3.3.20 双射，P42</li>
+<li>3.4.1 集合的象，P44</li>
+<li>3.4.4 逆象，P45</li>
+<li>定义交集，P47</li>
+<li>3.5.1 序偶，P49</li>
+<li>3.5.4 笛卡尔乘积，P49</li>
+<li>3.5.7 有序n元组及n重笛卡尔乘积，P50</li>
+<li>3.6.1 基数相同，P54</li>
+<li>3.6.5 集合具有基数n的定义，P55</li>
+<li>3.6.10 有限集合，P56</li>
+</ul>
+<h4 id="Axiom"><a href="#Axiom" class="headerlink" title="Axiom"></a>Axiom</h4><ul>
+<li>3.1 集合是对象，P26</li>
+<li>3.2 存在一个集合，叫作空集，P28</li>
+<li>3.3 单元素集和双元素集存在，P28</li>
+<li>3.4 双并，P29</li>
+<li>3.5 分类公理，也叫分离公理，P31</li>
+<li>3.6 替换公理，P34</li>
+<li>3.7 无限，存在一个集合N，其元素叫做自然数，0是N中的一个对象，而且由每个自然数$n \in N$所指定的满足Peano公理的对象n++也在N中，P34</li>
+<li>3.8 万有分类，也就是概括公理，P36</li>
+<li>3.9 正则性，又叫基础公理（the axiom<br>of foundation）。该公理保证了，一个集合不会含有其自身为其元素，P37</li>
+<li>3.10 幂级公理，此公理的一个结果是，${Y\ :\ Y \subseteq X}$是一个集合，P46</li>
+<li>3.11 并，区别Axiom 3.4，P46</li>
+<li>Axiom 3.1~3.11，除了3.8，都叫做集合论的Zermelo-Fraenkel公理</li>
+</ul>
+<h4 id="Uncategorized-1"><a href="#Uncategorized-1" class="headerlink" title="Uncategorized"></a>Uncategorized</h4><ul>
+<li>几乎每个数学分支都有依赖集合论为其基础的部分</li>
+<li>Remark 3.1.3，存粹集合论，P27</li>
+<li>Proposition 3.1.18，集合被包含关系部分地安排了次序，P31</li>
+<li>${x \in A\ :\ P(x)}$也写作${x \in A\ |\ P(x)}$，P32</li>
+<li>函数遵从带入公理</li>
+<li>有时也称bijective function为a perfect matching或者one-to-one correspeondence</li>
+<li>象S，前象f(S)，后象$f^{-1}(S)$</li>
+<li>Example 3.4.5，$f(f^{-1}(S)) \neq S$；Example 3.4.6，$f^{-1}(f(S)) \neq S$</li>
+<li>${Y\ :\ Y \subseteq X}$记作$2^X$</li>
+<li>Lemma 3.5.13，有限选择，P51</li>
+<li>Lemma 3.6.9，对非空集合X有#(X \ {x}) = #(X)-1，从而证明Proposition 3.6.8基数的唯一性，P55</li>
+<li>对有限集合X，用#(X)表示X的基数，P56</li>
+<li>Theorem 3.6.12，自然数集是无限集合，P56</li>
+</ul>
+<h3 id="u7B2C4_u7AE0"><a href="#u7B2C4_u7AE0" class="headerlink" title="第4章"></a>第4章</h3><h4 id="Definition-2"><a href="#Definition-2" class="headerlink" title="Definition"></a>Definition</h4><ul>
+<li>4.1.1，整数，P59</li>
+<li>4.1.2，两整数的和、积，P60</li>
+<li>4.1.4，整数的负运算，P61</li>
+<li>4.1.10，整数的顺序，P64</li>
+<li>4.2.1，比例数，P65</li>
+<li>4.2.2，比例数的和、积、负运算，P65</li>
+<li>非零比例数的倒数，P66</li>
+<li>两比例数的商，P68</li>
+<li>4.2.6，比例数的正负，P68</li>
+<li>4.2.8，比例数的顺序，P68</li>
+<li>4.3.1，比例数的绝对值，P69</li>
+<li>4.3.2，比例数的距离，P69</li>
+<li>4.3.4，$\varepsilon$-接近性，P70</li>
+<li>4.3.9，自然数次幂的指数运算，P71</li>
+<li>4.3.10，负整数次幂的指数运算，P71</li>
+</ul>
+<h4 id="Axiom-1"><a href="#Axiom-1" class="headerlink" title="Axiom"></a>Axiom</h4><h4 id="Uncategorized-2"><a href="#Uncategorized-2" class="headerlink" title="Uncategorized"></a>Uncategorized</h4><ul>
+<li>Lemma 4.1.3，加法和乘法符合代入公理，P61</li>
+<li>Lemma 4.1.5，整数的三歧性，P62</li>
+<li>Proposition 4.1.6&amp;4.2.4，整数的代数算率和比例数的代数算率，使整数全体构成一个交换环，比例数构成一个域，P62&amp;P67</li>
+<li>Lemma 4.2.3，比例数的和、积、负运算是满足代入公理的，P66</li>
+<li>Lemma 4.2.7，比例数的三歧性，P68</li>
+<li>分析学的一个历史悠久的传统是，在任何场合，希腊字母$\varepsilon$，$\delta$只应代表小的正数。</li>
+<li>Remark 4.3.8，把$\varepsilon$-接近的概念想象成相等概念的近似替代物在分析学中常常有用。</li>
+<li>Proposition 4.4.1，正数被比例数间隔开，P72</li>
+<li>Proposition 4.4.3，比例数被整数间隔开，P72</li>
+<li></li>
+</ul>
+<h3 id="term"><a href="#term" class="headerlink" title="term"></a>term</h3><ul>
+<li>Axiom 公理（axiomatically 公理化地），Theorem 定理，Lemma 引理，Remark 注释，Proposition 命题，Corollary 推论</li>
+<li>fundamental 基本事项</li>
+<li>reflexivity 自反性，Commutativity 交换性，Associativity 传递性，Distributivity 分配性，Regularity 正则性，duality 对偶性，trichofomy 三歧性</li>
+<li>cancellation law 消去率</li>
+<li>the axiom of substitution 代入公理</li>
+<li>singleton set 单元素集，pair set 双元素集</li>
+<li>proper subset 真子集</li>
+<li>disjoint (集合)不相交</li>
+<li>map 映射，有时也叫态射（morphism）</li>
+<li>domain 定义域，range 值域</li>
+<li>proper subset 真子集</li>
+<li>disjoint (集合)不相交</li>
+<li>map 映射，有时也叫态射（morphism）</li>
+<li>domain 定义域，range 值域</li>
+<li>constant function 常值函数，one-to-one function/injective function 单射，onto function/surjective function 满射，bijective function/invertible function 双射</li>
+<li>image 象，forward image 前象，inverse image/backward image 逆象</li>
+<li>Cartesian product 笛卡尔积，n-fold Cartesian product，n重笛卡尔积</li>
+<li>ordered n-tuple n元序列，简称ordered sequence 有限序列</li>
+<li>cardinality 基数，ordinal 序数，cardinal 基数</li>
+<li>commutative ring 交换环</li>
+<li>identity 恒等式</li>
+<li>give a sketch of the proof，给出一个证明的梗概</li>
+</ul>
+<ul>
+<li>反证法：Suppose for contradiction that…….But then….. , contradicting the hypothesis that f is a bijection.(Theorem 3.6.11 Proof)</li>
+<li>数学归纳法：We induct on n (starting with the base case n = 1). When n = 1….Now suppose inductively that the claim has already been proven for some n; we will now prove it for n++. By induction hypothesis, …When i = n++ it is clear that…. , thus closing the induction.(Lemma 3.5.12 Proof)</li>
+</ul>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/" target="_blank" rel="external">StackEdit</a>.</p>
+</blockquote>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/陶哲轩实分析/" rel="tag">#陶哲轩实分析</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/20/thoughts/" rel="next" title="thoughts">
+                <i class="fa fa-chevron-left"></i> thoughts
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="Witness" />
+          <p class="site-author-name" itemprop="name">Witness</p>
+          <p class="site-description motion-element" itemprop="description">Time is the real magic.</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+          
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C2_u7AE0"><span class="nav-number">1.</span> <span class="nav-text">第2章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition"><span class="nav-number">1.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Peano_u516C_u7406"><span class="nav-number">1.2.</span> <span class="nav-text">Peano公理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Uncategorized"><span class="nav-number">1.3.</span> <span class="nav-text">Uncategorized</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C3_u7AE0"><span class="nav-number">2.</span> <span class="nav-text">第3章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition-1"><span class="nav-number">2.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Axiom"><span class="nav-number">2.2.</span> <span class="nav-text">Axiom</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Uncategorized-1"><span class="nav-number">2.3.</span> <span class="nav-text">Uncategorized</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C4_u7AE0"><span class="nav-number">3.</span> <span class="nav-text">第4章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition-2"><span class="nav-number">3.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Axiom-1"><span class="nav-number">3.2.</span> <span class="nav-text">Axiom</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Uncategorized-2"><span class="nav-number">3.3.</span> <span class="nav-text">Uncategorized</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#term"><span class="nav-number">4.</span> <span class="nav-text">term</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Witness</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'betweentearsandlaughter';
+      var disqus_identifier = '2016/02/07/Notes-for-Tao-Analysis/';
+      var disqus_title = '陶哲轩实分析';
+      var disqus_url = 'http://BetweenTearsAndLaughter.github.io/2016/02/07/Notes-for-Tao-Analysis/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+  
+
+
+</body>
+</html>
